@@ -1,0 +1,70 @@
+body{
+    background-color: #FAF6F0;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* colors 
+purple: #BFC0EB
+pink: #F3C7ED
+beige: #FAF6F0
+orange: #F7D7C3
+dark beige: #EFE1D5
+pinky orange: #F7D2C9
+*/
+
+/* navbar */
+#mainNavbar {
+    font-size: 1rem;
+    font-weight: 100;
+  }
+  
+  #mainNavbar .nav-link {
+    color: #6064ea;
+    padding: 5px 50px 0px 0px;
+  }
+  
+  #mainNavbar .nav-link:hover {
+    color: #BFC0EB;
+  }
+  
+  #mainNavbar .navbar-brand {
+    color: #BFC0EB;
+  }
+  
+  #mainNavbar img {
+      width: 12rem;
+      padding: 0px 50px 0px 0px;
+  }
+
+.navbar.scrolled{
+    background-color: #cce7ff;
+    transition: background 500ms;
+}
+
+
+/* Hero section */
+.hero-img{
+    width: 600px;
+    padding: 20px 0px 0px 30px;
+}
+
+.row-hero{
+    margin-top: 60px;
+}
+
+#headingGroup h1, h2, p{
+    color: #6064ea;
+}
+
+#headingGroup h1{
+    font-size: 2rem;
+}
+
+#headingGroup h2{
+    font-size: 1.5rem;
+}
+
+#headingGroup p{
+    font-size: 0.8rem;
+}
