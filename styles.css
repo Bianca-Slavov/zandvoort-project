@@ -42,15 +42,30 @@ pinky orange: #F7D2C9
     transition: background 500ms;
 }
 
+.navbar-mobile-img{
+        transform: translateX(-50%);
+        left: 50%;
+        position: absolute;
+}
+
+.navbar-toggler{
+    margin-top: 10px;
+}
+
 
 /* Home section */
 .hero-img{
     width: 600px;
-    padding: 20px 0px 0px 30px;
+    /* padding: 20px 0px 0px 30px; */
 }
 
+section{
+    margin-top: 85px;
+}
+
+
 .row-hero{
-    margin-top: 60px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -73,15 +88,18 @@ pinky orange: #F7D2C9
 }
 
 .btn{
-    border: 1px solid #6064ea;
+    border: 0.75px solid #6064ea;
+    background-color: #fce5c9;
     color: #FD886A;
+    font-size: 0.9rem;
     margin: 30px 0px;
 }
 
 .btn:hover{
     background-color: #FD886A;
     border: 1px solid #6064ea;
-    opacity: 70%;
+    opacity: 85%;
+    transition: width 2s, height 2s, background-color 1s, transform 2s;
 }
 
 .coded-by {
@@ -104,3 +122,4 @@ footer p{
 footer a:hover{
     text-decoration: none;
 }
+
