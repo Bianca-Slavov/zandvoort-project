@@ -13,40 +13,172 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-
-    <link href="todo.html" rel="import" />
-    <link href="tostay.html" rel="import" />
-    <link href="info.html" rel="import" />
-
     <title>Zandvoort</title>
+    <style>
+
+body{
+    background-color: #FAF6F0;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+section{
+    margin-top: 85px;
+}
+
+footer{
+    background-color: #e2f0fc;
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+footer p{
+    margin: 0;
+}
+
+footer a:hover{
+    text-decoration: none;
+}
+
+/* navbar */
+#mainNavbar {
+    font-size: 1rem;
+    font-weight: 100;
+  }
+  
+  #mainNavbar .nav-link {
+    color: #6064ea;
+    padding: 5px 30px 0px 30px;
+  }
+  
+  #mainNavbar .nav-link:hover {
+    color: #FD886A;
+  }
+
+  #mainNavbar .active {
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  #mainNavbar .navbar-brand {
+    color: #BFC0EB;
+  }
+  
+  #mainNavbar img {
+    padding: 0px 10px 2px 10px;  
+    width: 12rem;
+      
+  }
+
+.navbar.scrolled{
+    background-color: #cce7ff;
+    transition: background 500ms;
+}
+
+.navbar-mobile-img{
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.navbar-toggler{
+    margin-top: 20px;
+}
+
+.hero-img{
+    width: 600px;
+}
+
+.row-hero{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#headingGroup h1, h2, h3, h4, p{
+    color: #6064ea;
+}
+
+#headingGroup h1{
+    font-size: 1.9rem;
+}
+
+#headingGroup h2{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#headingGroup h3{
+    font-size: 1.7rem;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#headingGroup h4{
+    font-size: 1.0rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+#headingGroup p{
+    font-size: 0.8rem;
+    line-height: 2;
+}
+
+.btn{
+    border: 0.75px solid #6064ea;
+    background-color: #fce5c9;
+    font-size: 0.9rem;
+    margin: 30px 0px;
+}
+
+.btn:hover{
+    background-color: #6064ea;
+    border: 1px solid #6064ea;
+    opacity: 85%;
+    transition: width 2s, height 2s, background-color 1s, transform 2s;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #FD886A;
+}
+
+.btn a:hover{
+    color: #FD886A;
+}
+
+.coded-by {
+    margin-top: 0;
+    font-size: 15px;
+  }
+  </style>
 </head>
 
 <body>
     <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top d-flex navbar-light">
-
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon ">
-            <img class="d-md-block d-md-none navbar-mobile-img" src="images/logo.png" alt="">
+            <img class="d-md-block d-md-none navbar-mobile-img" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/562/original/logo.png?1668425154" alt="">
           </span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navLinks">
           <ul class="navbar-nav align-items-lg-end">
             <li class="nav-item">
-              <a href="" class="nav-link">Home</a>
+              <a href="" class="nav-link active">Home</a>
             </li>
             <li class="nav-item">
-              <a href="todo.html" class="nav-link">What to do</a>
+              <a href="https://www.visitzandvoort.com/shareyourexperience" target="_blank" class="nav-link">What to do</a>
             </li>
             <li class="nav-item">
-            <img class="d-none d-lg-block" src="images/logo.png" alt="">
+            <img class="d-none d-lg-block" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/562/original/logo.png?1668425154" alt="">
            </li>
            <li class="nav-item">
-            <a href="tostay.html" class="nav-link">Where to stay</a>
+            <a href="https://www.liefsuitzandvoort.com/overnachten-in-zandvoort" target="_blank" class="nav-link">Where to stay</a>
           </li>
             <li class="nav-item">
-              <a href="info.html" class="nav-link">Practical information</a>
+              <a href="https://www.visitzandvoort.com/accessibility-of-zandvoort" target="_blank" class="nav-link">Practical information</a>
             </li>
           </ul>
         </div>
@@ -56,19 +188,21 @@
 
         <div class="row align-items-center row-hero">
           <div class="col-lg-6 col-img text-center">
-            <img class="img-fluid hero-img" src="images/first-img.png" alt="">
+            <img class="img-fluid hero-img" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/561/original/first-img.png?1668425147" alt="">
           </div>
           <div class="col-lg-6">
             <div class="row justify-content-center">
               <div class="col-10">
                 <div id="headingGroup" class="text-center d-lg-block mt-5">
                 <h1>Zandvoort aan Zee</h1>
-            <h2 class="font-italic">Amsterdam Beach</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, quam vero numquam consectetur, porro, cum aliquam distinctio asperiores necessitatibus repudiandae commodi ab in dolores impedit quos voluptatum quas ipsam deleniti?
-            Quas, laborum quis. Hic minus consectetur necessitatibus libero, corporis porro et est sed officiis tenetur. Ab unde dicta iusto debitis, labore corrupti sunt cumque molestias aliquid, nemo vel similique ut.
-            Nihil reiciendis explicabo exercitationem atque repellendus similique natus perspiciatis iusto maxime omnis ipsa architecto eligendi quidem delectus deleniti provident cupiditate incidunt laboriosam magni, recusandae consequatur ea autem possimus aliquam. Iste.
-            <div><button type="button" class="btn btn-outline-info">
-              <a href="todo.html">
+            <h2 class="font-italic dynamic-header">Amsterdam Beach</h2>
+            <p>Zandvoort a seaside town just outside of Amsterdam, it's a must visit destination when in The Netherlands. 
+              The atmosphere is lively, especially in spring and summer and there is a lot to do! 
+              Stroll around the town, the beach and the dunes, take a surfing lesson, visit the Zandvoort Circuit, take a gamble in Holland Casino or relax and grab a drink at a cozy terrace.
+
+           
+              <div><button type="button" class="btn btn-outline-info">
+              <a href="https://www.visitzandvoort.com/shareyourexperience" target="_blank">
               Read about what to do</a></button></div>
                </div>
             </div>
@@ -84,23 +218,24 @@
                 <div class="col-10">
                   <h1>A home away from home</h1>
               <h2 class="font-italic">Find your favorite place to stay</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, quam vero numquam consectetur, porro, cum aliquam distinctio asperiores necessitatibus repudiandae commodi ab in dolores impedit quos voluptatum quas ipsam deleniti?
-              Quas, laborum quis. Hic minus consectetur necessitatibus libero, corporis porro et est sed officiis tenetur. Ab unde dicta iusto debitis, labore corrupti sunt cumque molestias aliquid, nemo vel similique ut.
-              Nihil reiciendis explicabo exercitationem atque repellendus similique natus perspiciatis iusto maxime omnis ipsa architecto eligendi quidem delectus deleniti provident cupiditate incidunt laboriosam magni, recusandae consequatur ea autem possimus aliquam. Iste.
-              <button type="button" class="btn btn-outline-info">
-                <a href="tostay.html">Check out where to stay</a></button>  
+              <p>From boutique hotels and beach cottages to camper spots and apartments, there is something suiteable for everyone. 
+                Although there is much to offer, it is wise to book early! That way you can be assured of your favorite spot.
+              <a href="https://www.instagram.com/liefsuit.zandvoort/" alt="">Liefs uit Zandvoort</a> has made a list of the nicest places to stay in Zandvoort.
+                I would definitely check it out if I was you! The website is written in Dutch but you can find the names of every accommodation here.
+              <div><button type="button" class="btn btn-outline-info">
+                <a href="https://www.liefsuitzandvoort.com/overnachten-in-zandvoort" target="_blank">Check out where to stay</a></button> </div> 
                  </div>
               </div>
             </div>
           </div>
               <div class="col-lg-6 col-img text-center order-1 order-md-2">
-                <img class="img-fluid hero-img" src="images/second-img.png" alt="">
+                <img class="img-fluid hero-img" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/563/original/second-img.png?1668425161" alt="">
               </div>
         </div>
 
         <div class="row align-items-center row-hero">
           <div class="col-lg-6 col-img text-center">
-            <img class="img-fluid hero-img" src="images/third-img.png" alt="">
+            <img class="img-fluid hero-img" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/564/original/third-img.png?1668425169" alt="">
           </div>
           <div class="col-lg-6">
             <div class="row justify-content-center">
@@ -108,11 +243,11 @@
                 <div id="headingGroup" class="text-center d-lg-block mt-5">
                 <h1>How to get there</h1>
             <h2 class="font-italic">And other practical info</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, quam vero numquam consectetur, porro, cum aliquam distinctio asperiores necessitatibus repudiandae commodi ab in dolores impedit quos voluptatum quas ipsam deleniti?
-            Quas, laborum quis. Hic minus consectetur necessitatibus libero, corporis porro et est sed officiis tenetur. Ab unde dicta iusto debitis, labore corrupti sunt cumque molestias aliquid, nemo vel similique ut.
-            Nihil reiciendis explicabo exercitationem atque repellendus similique natus perspiciatis iusto maxime omnis ipsa architecto eligendi quidem delectus deleniti provident cupiditate incidunt laboriosam magni, recusandae consequatur ea autem possimus aliquam. Iste.
+            <p>Not entirely unimportant, how do you actually get to Zandvoort? 
+              The Zandvoort Tourist Office has it all written out, whether you come by public transport or by car. Everything is well explained, so you can not miss it. 
+              Besides that there is a lot of useful information to find on their website, such as a map, tourist information and frequently asked questions.
             <div><button type="button" class="btn btn-outline-info">
-              <a href="info.html">Find out more</a></button></div>
+              <a href="https://www.visitzandvoort.com/accessibility-of-zandvoort" target="_blank">Find out more</a></button></div>
                </div>
             </div>
             </div>
@@ -124,27 +259,40 @@
 
       <footer>
         <span>
-          <p>This project is created and 
-            <a href="https://github.com/Bianca-Slavov/zandvoort-project" target="_blank">open-source coded</a>   
-          by
+          <p>This project is created & coded by
             <a href="https://www.linkedin.com/in/biancaslavov/" target="_blank">Bianca Slavov</a>
          </p>
         </span>
       </footer>
     </div>
 
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    
     <script>
-      $(function () {
-        $(document).scroll(function(){
-          var $nav = $("#mainNavbar");
-          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-        });
+    $(function () {
+      $(document).scroll(function(){
+        var $nav = $("#mainNavbar");
+        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
       });
-    </script>
+    });
+
+const text = document.querySelector(".dynamic-header");
+
+const textLoad = () => {
+   setTimeout(() => {
+       text.textContent = "Amsterdam Beach 🌴";
+   }, 0);
+   setTimeout(() => {
+       text.textContent = "Seaside town 🔆";
+   }, 900);
+   setTimeout(() => {
+       text.textContent = "Visit Zandvoort 🐚";
+   }, 2000); //1s = 1000 milliseconds
+}
+
+textLoad();
+setInterval(textLoad, 4000);
+</script>
 </body>
 </html>
